@@ -46,11 +46,6 @@ module.exports = class Application {
     });
   }
   creatRouter() {
-    this.#app.get("/", (req, res) => {
-      return res.json({
-        message: "Home page",
-      });
-    });
     this.#app.use(allRouter);
   }
 };
